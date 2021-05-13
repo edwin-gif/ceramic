@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="ceramica, compra de ceramica, esculturas">
+    <meta name="description" content="Diseño profesional">
+    <meta name="owner" content="ANDREA MARTINEZ">
+    <meta name="author" content="EDWIN BRANDON DIAZ MARIN">
+    <meta name="robots" content="index, follow">
+
+
+
+
+    <title>Ceramica Sophie</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/modernizr-custom.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="iconos/style.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="logos/icomoon (4)/style.css">
+    <link rel="stylesheet" href="Logos2/icomoon (5)/style.css">
+    <link rel="stylesheet" href="Logos2/icomoon (6)/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                <figure> <img src="img/slogan.jpeg" alt=""></figure>
+            </a>
+            <a href="index.html"> Ceramica Sophie</a>
+        </h1>
+        <nav id="ioMenu">
+            <figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()"><img src="img/transparent-shapes-icon-menu-icon-interface-icon-assets-icon-5f96852ed95251.2098007316037000148902.png" alt=""></figure>
+
+            <div id="card_menu">
+                <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()"><img src="img/kisspng-computer-icons-download-login-icon-design-exit-5ac22872b9f219.2043624015226737787616.png" alt=""></figure>
+
+                <figure id="logo_menu"><img src="img/slogan sin f.png" alt=""></figure>
+
+                <ul>
+                    <li>
+                        <a onclick="navSection('home')" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a onclick="navSection('about')" href="#">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a onclick="navSection('S')" href="#">Productos</a>
+                    </li>
+                    <li>
+                        <a onclick="navSection('P')" href="#">OFERTAS</a>
+                    </li>
+                    <li>
+                        <a onclick="displayFormContact('block')" href="#">Contactos</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+        </nav>
+
+
+
+
+        <div id="prev_section" onclick="displaySection('prev')"><img src="img/kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a82ed16.7252492515177963945363.png" alt=""></div>
+        <div id="next_section" onclick="displaySection('next')"><img src="img/kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a82ed16.7252492515177963945363.png" alt=""></div>
+    </header>
+
+    <div id="slider">
+        <section class="slide" id="home" style="display: block;">
+
+            <div class="mainanimation">
+                <div id="particles-js"></div>
+            </div>
+            <div class="mainlogo">
+                <h2>Empresa <strong>Diseñadora de ceramica</strong></h2>
+                <figure><img src="img/slogan sin f.png" alt=""></figure>
+            </div>
+            <div class="buttonspage">
+
+                <div id="contactamee" onclick="displayFormContact('block')">
+                    CONTACTAME
+                </div>
+                <a href="Paginas/location.html">Localizame</a>
+            </div>
+        </section>
+
+        <section class="slide" id="about" style="display: none;">
+
+            <div class="mision">
+                <h2>MISION</h2>
+                <p>Somos una empresa que crea y diseña los mejores muñecos de porcelana con los mejores artesanos donde puedan expresar todos sus ideales destacándose de las mejores empresas en muñecos de porcelana donde lo mas importante para nosotros son
+                    la comunidad que ayudan para mejorar la empresa.</p>
+            </div>
+
+            <div class="vision">
+                <h2>VISION</h2>
+                <p>Ser la empresa de muñecos de porcelana mas importante de todo México contando con todos los estándares de calidad y de atención a los clientes, brindar lo mejor para nuestros clientes , para que confíen en nosotros.</p>
+
+            </div>
+
+        </section>
+        <section class="slide" id="S" style="display: none;">
+
+            <div class="contener">
+                <div class="carrito" id="ttt">
+                    <h3>Carrito</h3>
+                    <a href=""> Comprar</a>
+                    <a href=""> Vaciar</a>
+                    <p>Subtotal:</p>
+                    <p id="sub"></p>
+                    <p>Iva16%:</p>
+                    <p id="iva"></p>
+                    <p>Total en pesos:</p>
+                    <p id="tt"></p>
+
+                    <div id="art">
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'bruja',
+                    precio:  600
+                })">
+                    <img src="img/0B61948C-DBA4-41C8-A902-D4AACCD15373.JPEG">
+                    <h4>Bruja</h4>
+                    <p>Bruja de 40cm</p>
+                    <a href="#"> $600</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'payaso',
+                    precio:  800
+                })">
+                    <img src="img/285ACDD7-EA9C-43E9-AFC1-3CB2870C6F8F.JPEG">
+                    <h4>Payaso</h4>
+                    <p>Payaso de 20cm</p>
+                    <a href="#">$800</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'osito',
+                    precio:  600
+                })">
+                    <img src="img/32C01063-559E-4F11-B8CD-3B127FDDACA8.JPEG">
+                    <h4>Osito</h4>
+                    <p>Osito de 40cm</p>
+                    <a href="#">$600</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'santa clus',
+                    precio:  700
+                })">
+                    <img src="img/53E9D382-9A0F-4195-A48B-20D47F015D70.JPEG">
+                    <h4>Santa clus</h4>
+                    <p>Santa Clus de 20cm</p>
+                    <a href="#">$700</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'moto',
+                    precio:  800
+                })">
+                    <img src="img/84102417-408F-4BB6-89B6-9682442E2A04.JPEG">
+                    <h4>Moto</h4>
+                    <p>Moto de 15cm de largo</p>
+                    <a href="#">$800</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'ositos',
+                    precio:  900
+                })">
+                    <img src="img/A8283646-7C9E-40D7-87F1-75679A34AA2A.JPEG">
+                    <h4>Ositos</h4>
+                    <p>Tres ositos de 20cm</p>
+                    <a href="#">$900</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'gatitos',
+                    precio:  850
+                })">
+                    <img src="img/ADAE05F4-BC44-4237-BAF8-1FDC294C135F.JPEG">
+                    <h4>Gatitos</h4>
+                    <p>Gatos de 40cm y 15 de largo</p>
+                    <a href="#">$850</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'angelinas',
+                    precio:  1200
+                })">
+                    <img src="img/Angelinas.JPEG">
+                    <h4>Angelinas</h4>
+                    <p>Tres angelinas de 20cm</p>
+                    <a href="#">$1200</a>
+                </div>
+
+                <div class="card" onclick="addProduct({
+                    nombre: 'angelita',
+                    precio:  250
+                })">
+                    <img src="img/Angelita.JPEG">
+                    <h4>Angelita</h4>
+                    <p>Angelita de 40cm</p>
+                    <a href="#">$250</a>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </section>
+        <section class="slide" id="P" style="display: none;">
+            <div id="oferta">
+                <figure><img src="img/SALE.png" alt=""></figure>
+
+            </div>
+
+
+        </section>
+        <section class="slide" id="contacto" style="display: none"></section>
+    </div>
+
+    <div id="contact_form">
+        <form action="contact.php" id="form1" name="form1" method="post">
+            <div id="close_form" onclick="displayFormContact('none')"></div>
+            <figure id="logo_mensaje"><img src="img/kisspng-advertising-email-flat-envelope-5a8954274c52a8.4258609515189494153126.png" alt=""></figure>
+            <p>Contactame!</p>
+            <input type="text" id="name " name="name" placeholder="Nombre" onfocus="if(this.placeholder='') this.placeholder='Tu nombre'">
+            <input type="text" id="email " name="email" placeholder="Tu email" onfocus="if(this.placeholder='') this.placeholder='Tu email'">
+            <textarea name="message" id="message" placeholder="Mensaje" onfocus="if(this.placeholder='') this.placeholder='Mensaje'"></textarea>
+            <input type="submit" name="Submit" id="buttom" value="ENVIAR"></form>
+    </div>
+
+    <div id="contact_buttom" onclick="displayFormContact('block')"></div>
+
+    <footer>
+        <div class="rrss">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <p>@ 2021 All rights reserved | Privacity Policy</p>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+    <script>
+        var sections = new Array(5);
+        sections[0] = "home";
+        sections[1] = "about";
+        sections[2] = "S";
+        sections[3] = "P";
+        sections[4] = "contacto";
+        displayMenu();
+        alertSize();
+
+        function setColors(i) {
+            var search;
+            var bkgr_body;
+            var bkhr_menu;
+            if (sections[i] == "home") {
+                bkgr_body = "#233D58"
+                bkgr_menu = "#233D58"
+            } else {
+                bkgr_body = "#f1f1f1"
+                bkgr_menu = "#29abe2"
+            }
+            search = document.getElementById(sections[i]);
+            search.style.background = bkgr_body;
+            var menu = document.getElementsByTagName("header")[0];
+            menu.style.background = bkgr_menu;
+        }
+
+        function navSection(nav) {
+
+            var search;
+            var show;
+
+
+            for (var i = 0; i < 5; i++) {
+                search = document.getElementById(sections[i]);
+                search.style.display = "none";
+
+                if (sections[i] == nav) {
+                    search.style.display = "block";
+                    setColors(i);
+                }
+            }
+
+        }
+
+        function displayMenu() {
+            function alertSize() {
+                var myWidth = 0,
+                    myHeight = 0;
+                if (typeof(window.innerWidth) == 'number') {
+                    //No-IE
+                    myWidth = window.innerWidth;
+                    myHeight = window.innerHeight;
+                } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+                    //IE 6+
+                    myWidth = document.documentElement.clientWidth;
+                    myHeight = document.documentElement.clientHeight;
+                } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                    //IE 4 compatible
+                    myWidth = document.body.clientWidth;
+                    myHeight = document.body.clientHeight;
+                }
+                var display;
+                var card_menu = document.getElementById("card_menu");
+                display = card_menu.style.display;
+                if (myWidth < 767) {
+                    card_menu.style.display = "none";
+                } else {
+                    card_menu.style.display = "block";
+                }
+            }
+
+
+
+
+
+
+
+            var display;
+            var card_menu = document.getElementById("card_menu");
+            display = card_menu.style.display;
+
+            if (display == "none") {
+                card_menu.style.display = "block";
+            } else {
+                card_menu.style.display = "none";
+            }
+        }
+
+        function displaySection(nav) {
+
+            var search;
+            var show;
+            for (var i = 0; i < 5; i++) {
+                search = document.getElementById(sections[i]);
+                show = search.style.display;
+                if (show == "block") {
+                    search.style.display = "none";
+                    if (nav == "next") {
+                        i++;
+                        if (i > 4) i = 0;
+                    }
+                    if (nav == "prev") {
+                        i--;
+                        if (i < 0) i = 4;
+                    }
+                    search = document.getElementById(sections[i]);
+                    search.style.display = "block";
+                    break;
+                }
+            }
+            setColors(i);
+        }
+
+        function displayFormContact(status) {
+            var form = document.getElementById("contact_form");
+            form.style.display = status;
+        }
+    </script>
+
+
+</body>
+
+</html>
